@@ -42,6 +42,8 @@ spec:
             memory: 100Mi
         ports:
         - containerPort: 6379
+        securityContext:
+          privileged: true
 ---
 apiVersion: v1
 kind: Service
